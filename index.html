@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+
+<marquee behavior="alternate">I &hearts; Khalid</marquee>
+
+<link rel="stylesheet" href="style1.css">
+<script src="javascript.js"></script>
+
+
+		<title> Khalid </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+
+	<h1> Khalid </h1>
+
+<p id="demo2"></p>
+<script>
+var d = new Date();
+document.getElementByld("demo2").innerHTML =d;
+</script>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="khalid1.jpg" alt="image of my favorite singer" width="100%" height="400px">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="khalid2.jpg" width="100%" height="400px">
+  <div class="text"></div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div>
+
+	<h2> Facts </h2>
+
+	<ol>
+		<li> Born on February 11, 1998 </li>
+		<li> Lived in Georgia, Kentucky, New York, Germany, Texas, etc. </li>
+		<li> Started writing and singing in high school on SoundCloud </li>
+	</ol>
+
+	<h2> Favorite Songs </h2>
+
+	<ul>
+		<li> 8teen </li>
+		<li> Let's Go </li>
+		<li> American Teen </li>
+		<li> Saved </li>
+
+	</ul>
+</div>
+
+	<h2> Video </h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Oapebl0bADA" 
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+<p id="demo">I've never fell in love </p>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "I saved those feelings for you"'>click!</button>
+	
+<h3> Sources </h3>
+
+	<p> https://en.wikipedia.org/wiki/American_Teen_(album) <br>
+	https://en.wikipedia.org/wiki/Khalid_(singer) <br>
+	https://besthqwallpapers.com/</p>
+
+	</body>
+</html>
+
